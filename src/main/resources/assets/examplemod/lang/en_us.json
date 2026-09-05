@@ -1,13 +1,3 @@
 {
-  "itemGroup.examplemod": "Geological Mod Tab",
-  "block.examplemod.example_block": "Geological Block",
-  "item.examplemod.example_item": "Geological Item",
 
-  "examplemod.configuration.title": "Geological Mod Configs",
-  "examplemod.configuration.section.examplemod.common.toml": "Geological Configs",
-  "examplemod.configuration.section.examplemod.common.toml.title": "Geological Mod Configs",
-  "examplemod.configuration.items": "Item List",
-  "examplemod.configuration.logDirtBlock": "Log Dirt Block",
-  "examplemod.configuration.magicNumberIntroduction": "Magic Number Text",
-  "examplemod.configuration.magicNumber": "Magic Number"
 }
