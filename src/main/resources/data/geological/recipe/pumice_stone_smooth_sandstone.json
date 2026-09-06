@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_sandstone"
+    },
+    {
+      "item": "geological:pumice_stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:sandstone",
+    "count": 1
+  }
+}

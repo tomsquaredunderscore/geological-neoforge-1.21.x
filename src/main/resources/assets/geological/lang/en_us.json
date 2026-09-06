@@ -1,0 +1,9 @@
+{
+"item.geological.raw_pyrite" : "Raw Pyrite",
+"item.geological.pyrite_ingot" : "Pyrite Ingot",
+"item.geological.pumice_stone" : "Pumice Stone",
+"block.geological.pyrite_block" : "Block of Pyrite",
+"block.geological.raw_pyrite_block" : "Block of Raw Pyrite",
+"block.geological.pumice" : "Pumice",
+"block.geological.golden_amethyst_block" : "Block of Golden Amethyst"
+}

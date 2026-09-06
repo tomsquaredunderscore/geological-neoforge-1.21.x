@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gold_ingot",
+  "ingredients": [
+    {
+      "item": "geological:pumice"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "geological:pumice_stone"
+  }
+}

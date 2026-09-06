@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:jack_o_lantern"
+    },
+    {
+      "item": "geological:pumice_stone"
+    }
+  ],
+  "result": {
+    "id": "minecraft:carved_pumpkin",
+    "count": 1
+  }
+}

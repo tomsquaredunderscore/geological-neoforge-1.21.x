@@ -1,7 +1,10 @@
 package net.tomsquared.geological;
 
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.tomsquared.geological.block.ModBlocks;
+import net.tomsquared.geological.item.ModItems;
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
 
 import net.neoforged.bus.api.IEventBus;
@@ -26,6 +29,9 @@ public class Geological {
 
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -33,10 +39,22 @@ public class Geological {
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
-
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.PYRITE_INGOT);
+            event.accept(ModItems.RAW_PYRITE);
+            event.accept(ModItems.PUMICE_STONE);
+
+        }
+
+        if ((event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)) {
+            event.accept(ModBlocks.PYRITE_BLOCK);
+            event.accept(ModBlocks.RAW_PYRITE_BLOCK);
+            event.accept(ModBlocks.GOLDEN_ANETHST_BLOCK);
+            event.accept(ModBlocks.PUMICE);
+        }
     }
 
     @SubscribeEvent
