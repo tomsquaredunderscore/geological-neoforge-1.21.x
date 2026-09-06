@@ -1,6 +1,5 @@
 package net.tomsquared.geological;
 
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.tomsquared.geological.block.ModBlocks;
 import net.tomsquared.geological.item.ModItems;
@@ -28,6 +27,7 @@ public class Geological {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "geological:pyrite_ingot"
+    },
+    {
+      "item": "minecraft:amethyst_block"
+    }
+  ],
+  "result": {
+    "id": "geological:golden_amethyst_block"
+  }
+}
