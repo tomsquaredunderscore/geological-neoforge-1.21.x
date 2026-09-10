@@ -2,8 +2,7 @@ package net.tomsquared.geological.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.neoforged.bus.api.IEventBus;
@@ -38,10 +37,20 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PUMICE = registerBlock("pumice",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+// Oak
+public static final DeferredBlock<StairBlock> OAK_LOG_STARS = registerBlock("oak_log_stairs",
+        () -> new StairBlock(Blocks.OAK_WOOD.defaultBlockState(),
+                BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+public static final DeferredBlock<FenceBlock> OAK_LOG_FENCE = registerBlock("oak_log_fence",
+        () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+public static final DeferredBlock<WallBlock> OAK_LOG_WALL = registerBlock("oak_log_wall",
+        () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
-
-
+    public static final DeferredBlock<SlabBlock> OAK_LOG_SLAB = registerBlock("oak_log_slab",
+        () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 

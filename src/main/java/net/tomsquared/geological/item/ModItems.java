@@ -18,6 +18,9 @@ public class ModItems {
     public static final DeferredItem<Item> PUMICE_STONE = ITEMS.register("pumice_stone",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> VIGOROUS_SAPLING_OAK = ITEMS.register("vigorous_sapling_oak",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);
     }

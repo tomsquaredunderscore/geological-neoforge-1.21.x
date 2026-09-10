@@ -2,8 +2,18 @@
 "item.geological.raw_pyrite" : "Raw Pyrite",
 "item.geological.pyrite_ingot" : "Pyrite Ingot",
 "item.geological.pumice_stone" : "Pumice Stone",
+"item.geological.vigorous_sapling_oak" : "Vigorous Oak Sapling",
 "block.geological.pyrite_block" : "Block of Pyrite",
 "block.geological.raw_pyrite_block" : "Block of Raw Pyrite",
 "block.geological.pumice" : "Pumice",
-"block.geological.golden_amethyst_block" : "Block of Golden Amethyst"
+
+"block.geological.oak_log_stairs" : "Oak Log Stairs",
+"block.geological.oak_log_slab" : "Oak Log Slab",
+"block.geological.oak_log_wall" : "Oak Log Wall",
+"block.geological.oak_log_fence" : "Oak Log Fence",
+
+
+"block.geological.golden_amethyst_block" : "Block of Golden Amethyst",
+  "creativetab.geological.geological_tab" : "Geological Tab",
+  "creativetab.geological.geological_trees_tab" : "Geological Trees Tab"
 }
