@@ -18,14 +18,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.PYRITE_BLOCK.get());
-        dropSelf(ModBlocks.RAW_PYRITE_BLOCK.get());
-        dropSelf(ModBlocks.GOLDEN_ANETHST_BLOCK.get());
-        dropSelf(ModBlocks.PUMICE.get());
-        dropSelf(ModBlocks.OAK_LOG_STARS.get());
-        dropSelf(ModBlocks.OAK_LOG_FENCE.get());
-        dropSelf(ModBlocks.OAK_LOG_WALL.get());
-        dropSelf(ModBlocks.OAK_LOG_SLAB.get());
+
 
 
 

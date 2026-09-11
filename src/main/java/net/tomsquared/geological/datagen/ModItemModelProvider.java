@@ -13,10 +13,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.PUMICE_STONE.get());
-        basicItem(ModItems.RAW_PYRITE.get());
-        basicItem(ModItems.PYRITE_INGOT.get());
-        basicItem(ModItems.VIGOROUS_SAPLING_OAK.get());
+
 
     }
 }

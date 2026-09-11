@@ -18,40 +18,6 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Geological.MOD_ID);
 
-    public static final DeferredBlock<Block> PYRITE_BLOCK = registerBlock("pyrite_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).instrument(NoteBlockInstrument.BELL).sound(SoundType.STONE).requiresCorrectToolForDrops()));
-
-    public static final DeferredBlock<Block> RAW_PYRITE_BLOCK = registerBlock("raw_pyrite_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).instrument(NoteBlockInstrument.BELL).sound(SoundType.STONE).requiresCorrectToolForDrops()));
-
-
-    public static final DeferredBlock<Block> GOLDEN_ANETHST_BLOCK = registerBlock("golden_amethyst_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).instrument(NoteBlockInstrument.BELL).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
-
-
-
-    public static final DeferredBlock<Block> PUMICE = registerBlock("pumice",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE)));
-// Oak
-public static final DeferredBlock<StairBlock> OAK_LOG_STARS = registerBlock("oak_log_stairs",
-        () -> new StairBlock(Blocks.OAK_WOOD.defaultBlockState(),
-                BlockBehaviour.Properties.of().strength(2f)));
-
-public static final DeferredBlock<FenceBlock> OAK_LOG_FENCE = registerBlock("oak_log_fence",
-        () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f)));
-
-public static final DeferredBlock<WallBlock> OAK_LOG_WALL = registerBlock("oak_log_wall",
-        () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f)));
-
-
-    public static final DeferredBlock<SlabBlock> OAK_LOG_SLAB = registerBlock("oak_log_slab",
-        () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f)));
-
-
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

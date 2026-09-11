@@ -14,10 +14,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.PYRITE_BLOCK);
-        blockWithItem(ModBlocks.RAW_PYRITE_BLOCK);
-        blockWithItem(ModBlocks.PUMICE);
-        blockWithItem(ModBlocks.GOLDEN_ANETHST_BLOCK);
+
 
     }
 

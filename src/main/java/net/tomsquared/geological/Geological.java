@@ -47,17 +47,12 @@ public class Geological {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.PYRITE_INGOT);
-            event.accept(ModItems.RAW_PYRITE);
-            event.accept(ModItems.PUMICE_STONE);
+
 
         }
 
         if ((event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)) {
-            event.accept(ModBlocks.PYRITE_BLOCK);
-            event.accept(ModBlocks.RAW_PYRITE_BLOCK);
-            event.accept(ModBlocks.GOLDEN_ANETHST_BLOCK);
-            event.accept(ModBlocks.PUMICE);
+
         }
     }
 
