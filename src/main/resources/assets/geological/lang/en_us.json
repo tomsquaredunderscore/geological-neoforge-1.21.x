@@ -1,11 +1,14 @@
 {
 "item.geological.raw_pyrite" : "Raw Pyrite",
+"block.geological.pyrite_ore" : "Pyrite Ore",
+"block.geological.deepslate_pyrite_ore" : "Deepslate Pyrite Ore",
 "item.geological.pyrite_ingot" : "Pyrite Ingot",
 "item.geological.pumice_stone" : "Pumice Stone",
 "item.geological.vigorous_sapling_oak" : "Vigorous Oak Sapling",
 "block.geological.pyrite_block" : "Block of Pyrite",
 "block.geological.raw_pyrite_block" : "Block of Raw Pyrite",
 "block.geological.pumice" : "Pumice",
+"block.geological.raw_quartz" : "Raw Quartz",
 
 "block.geological.oak_log_stairs" : "Oak Log Stairs",
 "block.geological.oak_log_slab" : "Oak Log Slab",

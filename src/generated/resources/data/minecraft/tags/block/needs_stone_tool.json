@@ -1,3 +1,9 @@
 {
-  "values": []
+  "values": [
+    "geological:golden_amethyst_block",
+    "geological:pumice",
+    "geological:pyrite_block",
+    "geological:raw_quartz",
+    "geological:raw_pyrite_block"
+  ]
 }

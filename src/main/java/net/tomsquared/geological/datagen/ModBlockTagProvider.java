@@ -18,9 +18,27 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE);
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.GOLDEN_AMETHYST_BLOCK.get())
+                .add(ModBlocks.PUMICE.get())
+                .add(ModBlocks.PYRITE_BLOCK.get())
+                .add(ModBlocks.RAW_PYRITE_BLOCK.get())
+                .add(ModBlocks.DEEPSLATE_PYRITE_ORE.get())
+                .add(ModBlocks.PYRITE_ORE.get())
+                .add(ModBlocks.RAW_QUARTZ.get())
 
-        tag(BlockTags.NEEDS_STONE_TOOL);
+        ;
+
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.GOLDEN_AMETHYST_BLOCK.get())
+                .add(ModBlocks.PUMICE.get())
+                .add(ModBlocks.PYRITE_BLOCK.get())
+                .add(ModBlocks.RAW_QUARTZ.get())
+                .add(ModBlocks.RAW_PYRITE_BLOCK.get());
+
+
+
 
 
     }
