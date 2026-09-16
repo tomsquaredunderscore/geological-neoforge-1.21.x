@@ -10,14 +10,41 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tomsquared.geological.Geological;
 import net.tomsquared.geological.item.ModItems;
+import net.tomsquared.geological.sound.ModSounds;
 
 import java.util.function.Supplier;
 
+
 public class ModBlocks {
+
+
+
 
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(Geological.MOD_ID);
 
+    public static final SoundType RAW_QUARTZ_SOUNDS = new SoundType(1.0f, 1.0f, null, null, null, null, null) {
+        @Override
+        public net.minecraft.sounds.SoundEvent getBreakSound() {
+            return ModSounds.RAW_QUARTZ_BREAK.get(); // Triggers breaking pool
+        }
+        @Override
+        public net.minecraft.sounds.SoundEvent getStepSound() {
+            return ModSounds.RAW_QUARTZ_STEP.get();  // Triggers stepping pool
+        }
+        @Override
+        public net.minecraft.sounds.SoundEvent getPlaceSound() {
+            return ModSounds.RAW_QUARTZ_SOUNDS.get(); // Triggers base pool
+        }
+        @Override
+        public net.minecraft.sounds.SoundEvent getHitSound() {
+            return ModSounds.RAW_QUARTZ_SOUNDS.get();  // Triggers base pool
+        }
+        @Override
+        public net.minecraft.sounds.SoundEvent getFallSound() {
+            return ModSounds.RAW_QUARTZ_SOUNDS.get();  // Triggers base pool
+        }
+    };
     public static final DeferredBlock<Block> PUMICE = registerBlock("pumice",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.CORAL_BLOCK)));

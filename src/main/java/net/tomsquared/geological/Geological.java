@@ -4,6 +4,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.tomsquared.geological.block.ModBlocks;
 import net.tomsquared.geological.item.ModCreativeModeTabs;
 import net.tomsquared.geological.item.ModItems;
+import net.tomsquared.geological.sound.ModSounds;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
@@ -28,6 +29,9 @@ public class Geological {
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
+
+
+        ModSounds.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 

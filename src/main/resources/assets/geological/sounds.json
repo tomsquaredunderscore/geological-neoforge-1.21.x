@@ -1,0 +1,26 @@
+{
+  "raw_quartz_sounds": {
+    "subtitle": "subtitles.geological.raw_quartz_sounds",
+    "sounds": [
+      "geological:block/raw_quartz_1",
+      "geological:block/raw_quartz_2",
+      "geological:block/raw_quartz_3"
+    ]
+  },
+  "raw_quartz_break": {
+    "subtitle": "subtitles.geological.raw_quartz_break",
+    "sounds": [
+      "geological:block/raw_quartz_break1",
+      "geological:block/raw_quartz_break2",
+      "geological:block/raw_quartz_break3"
+    ]
+  },
+  "raw_quartz_step": {
+    "subtitle": "subtitles.geological.raw_quartz_step",
+    "sounds": [
+      "geological:block/raw_quartz_step1",
+      "geological:block/raw_quartz_step2",
+      "geological:block/raw_quartz_step3"
+    ]
+  }
+}
