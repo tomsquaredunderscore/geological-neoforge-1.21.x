@@ -29,7 +29,7 @@ public class CattailSeedProjectile extends ThrowableItemProjectile {
 
     @Override
     protected Item getDefaultItem() {
-        return ModItems.CATTAIL_SEED.get(); // Fallback item model (we will use Cattail Stalk, or your specific item)
+        return ModItems.CATTAIL_SEED.get();
     }
 
     @Override
