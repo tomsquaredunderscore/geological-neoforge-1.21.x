@@ -1,5 +1,21 @@
 {
 "item.geological.raw_pyrite" : "Raw Pyrite",
+
+
+"item.geological.cattail" : "Cattail",
+"item.geological.cattail_stalk" : "Cattail Stalk",
+"item.geological.peeled_cattail_stalk" : "Peeled Cattail Stalk",
+"item.geological.cooked_cattail_stalk" : "Cooked Cattail Stalk",
+"item.geological.golden_amethyst_shard" : "Golden Amethyst Shard",
+"item.geological.plump_sweet_berries" : "Plump Sweet Berries",
+"item.geological.venus_fly_trap_seeds" : "Venus Fly Trap Seeds",
+"item.geological.wild_carrot" : "Wild Carrot",
+"item.geological.cattail_seed" : "Cattail Seed",
+
+
+
+
+
 "block.geological.pyrite_ore" : "Pyrite Ore",
 "block.geological.deepslate_pyrite_ore" : "Deepslate Pyrite Ore",
 "item.geological.pyrite_ingot" : "Pyrite Ingot",
@@ -17,6 +33,6 @@
 
 
 "block.geological.golden_amethyst_block" : "Block of Golden Amethyst",
-  "creativetab.geological.geological_tab" : "Geological Tab",
-  "creativetab.geological.geological_trees_tab" : "Geological Trees Tab"
+  "creativetab.geological.tab" : "Geological Tab"
+
 }

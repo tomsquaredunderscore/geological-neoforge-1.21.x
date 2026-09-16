@@ -33,7 +33,10 @@ public class Geological {
 
         ModSounds.register(modEventBus);
 
-        ModCreativeModeTabs.register(modEventBus);
+        ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
+
+        ModParticles.PARTICLES.register(modEventBus);
+        ModEntities.ENTITY_TYPES.register(modEventBus);
 
 
         ModItems.register(modEventBus);
