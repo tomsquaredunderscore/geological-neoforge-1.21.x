@@ -44,18 +44,6 @@ public class CattailItem extends Item {
                     SoundEvents.BUNDLE_INSERT, SoundSource.PLAYERS, 0.6F, 1.3F + level.random.nextFloat() * 0.3F);
 
 
-            int seedCount = 2 + level.random.nextInt(3);
-            for (int i = 0; i < seedCount; i++) {
-                net.tomsquared.geological.CattailSeedProjectile seed = new net.tomsquared.geological.CattailSeedProjectile(level, player);
-
-                double rx = (level.random.nextDouble() - 0.5) * 0.8;
-                double ry = (level.random.nextDouble() - 0.5) * 0.8;
-                double rz = (level.random.nextDouble() - 0.5) * 0.8;
-
-                seed.shoot(player.getLookAngle().x + rx, player.getLookAngle().y + ry, player.getLookAngle().z + rz, 0.6F, 1.0F);
-                level.addFreshEntity(seed);
-            }
-
             // Consume Item
             if (!player.getAbilities().instabuild) {
                 stack.shrink(1);

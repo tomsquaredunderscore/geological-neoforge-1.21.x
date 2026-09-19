@@ -30,9 +30,6 @@ public class ModItems {
     public static final DeferredItem<Item> VIGOROUS_SAPLING_OAK = ITEMS.register("vigorous_sapling_oak",
             () -> new Item(new Item.Properties()));
 
-    public static final DeferredItem<Item> CATTAIL_SEED = ITEMS.register("cattail_seed",
-            () -> new CattailSeedItem(new Item.Properties()));
-
 
     public static final DeferredItem<Item> GOLDEN_AMETHYST_SHARD = ITEMS.register("golden_amethyst_shard",
             () -> new Item(new Item.Properties()));

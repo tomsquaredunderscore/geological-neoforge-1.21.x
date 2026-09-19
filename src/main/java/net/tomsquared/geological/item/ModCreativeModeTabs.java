@@ -42,8 +42,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CATTAIL.get());
                         output.accept(ModItems.VIGOROUS_SAPLING_OAK.get());
                         output.accept(ModItems.VENUS_FLY_TRAP_SEEDS.get());
-                        output.accept(ModItems.CATTAIL_SEED.get());
-
                         // Food & Edibles
                         output.accept(ModItems.WILD_CARROT.get());
                         output.accept(ModItems.CATTAIL_STALK.get());

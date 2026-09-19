@@ -1,6 +1,5 @@
 package net.tomsquared.geological.item;
 
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -8,7 +7,6 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.tomsquared.geological.ModEntities;
 import net.tomsquared.geological.ModParticles;
-import net.tomsquared.geological.client.CattailSeedRenderer;
 import net.tomsquared.geological.client.particle.FluffParticle;
 
 @EventBusSubscriber(modid = "geological", bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -21,7 +19,6 @@ public class ClientModEvents {
 
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(ModEntities.CATTAIL_SEED_PROJECTILE.get(), CattailSeedRenderer::new);
     }
 
 

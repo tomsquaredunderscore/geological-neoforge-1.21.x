@@ -20,7 +20,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GOLDEN_AMETHYST_SHARD.get());
         basicItem(ModItems.WILD_CARROT.get());
         basicItem(ModItems.CATTAIL.get());
-        basicItem(ModItems.CATTAIL_SEED.get());
         basicItem(ModItems.PEELED_CATTAIL_STALK.get());
         basicItem(ModItems.COOKED_CATTAIL_STALK.get());
         basicItem(ModItems.CATTAIL_STALK.get());
