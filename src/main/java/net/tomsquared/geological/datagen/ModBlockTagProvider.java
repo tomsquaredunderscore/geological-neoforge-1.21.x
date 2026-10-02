@@ -135,7 +135,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.PINK_DOGWOOD_PLANKS.get())
                 .add(ModBlocks.CHERRY_WOOD_WALL.get());
 
-       tag(BlockTags.FENCES)
+       tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.OAK_WOOD_FENCE.get())
                 .add(ModBlocks.BIRCH_WOOD_FENCE.get())
                 .add(ModBlocks.SPRUCE_WOOD_FENCE.get())
