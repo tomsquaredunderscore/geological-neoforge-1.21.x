@@ -3,6 +3,7 @@ package net.tomsquared.geological.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.fml.common.Mod;
@@ -24,6 +25,51 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DOGWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.PINK_DOGWOOD_LOG.get())
+                .unlockedBy("has_log", has(ModBlocks.PINK_DOGWOOD_LOG.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Geological.MOD_ID, "pink_dogwood_planks_from_log"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DOGWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.PINK_DOGWOOD_WOOD.get())
+                .unlockedBy("has_wood", has(ModBlocks.PINK_DOGWOOD_WOOD.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Geological.MOD_ID, "pink_dogwood_planks_from_wood"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DOGWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PINK_DOGWOOD_LOG.get())
+                .unlockedBy("has_stripped_log", has(ModBlocks.STRIPPED_PINK_DOGWOOD_LOG.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Geological.MOD_ID, "pink_dogwood_planks_from_stripped_log"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DOGWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.STRIPPED_PINK_DOGWOOD_WOOD.get())
+                .unlockedBy("has_stripped_wood", has(ModBlocks.STRIPPED_PINK_DOGWOOD_WOOD.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Geological.MOD_ID, "pink_dogwood_planks_from_stripped_wood"));
+
+        stairBuilder(ModBlocks.PINK_DOGWOOD_STAIRS.get(), Ingredient.of(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .group("wooden_stairs")
+                .unlockedBy("has_planks", has(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .save(recipeOutput);
+
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_DOGWOOD_SLAB.get(), Ingredient.of(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .group("wooden_slab")
+                .unlockedBy("has_planks", has(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .save(recipeOutput);
+
+        fenceBuilder(ModBlocks.PINK_DOGWOOD_FENCE.get(), Ingredient.of(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .group("wooden_fence")
+                .unlockedBy("has_planks", has(ModBlocks.PINK_DOGWOOD_PLANKS.get()))
+                .save(recipeOutput);
+
+
+
+        stairBuilder(ModBlocks.OAK_WOOD_STAIRS.get(), Ingredient.of(ModBlocks.PUMICE)).group("pumice")
+                .unlockedBy("has_pumice", has(ModBlocks.PUMICE)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_WOOD_SLAB.get(), ModBlocks.PUMICE.get());
+
+        fenceBuilder(ModBlocks.OAK_WOOD_FENCE.get(), Ingredient.of(ModBlocks.PUMICE.get())).group("pumice")
+                .unlockedBy("has_pumice", has(ModBlocks.PUMICE.get())).save(recipeOutput);
+      wall(recipeOutput,RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_WOOD_WALL.get(), ModBlocks.PUMICE.get());
+
+
 
         List<ItemLike> PYRITE_SMELTABLES = List.of(ModItems.RAW_PYRITE, ModBlocks.DEEPSLATE_PYRITE_ORE, ModBlocks.PYRITE_ORE);
 

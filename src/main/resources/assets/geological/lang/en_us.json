@@ -26,13 +26,80 @@
 "block.geological.pumice" : "Pumice",
 "block.geological.raw_quartz" : "Raw Quartz",
 
-"block.geological.oak_log_stairs" : "Oak Log Stairs",
-"block.geological.oak_log_slab" : "Oak Log Slab",
-"block.geological.oak_log_wall" : "Oak Log Wall",
-"block.geological.oak_log_fence" : "Oak Log Fence",
+  "block.geological.oak_wood_stairs" : "Oak Wood Stairs",
+  "block.geological.oak_wood_slab" : "Oak Wood Slab",
+  "block.geological.oak_wood_wall" : "Oak Wood Wall",
+  "block.geological.oak_wood_fence" : "Oak Wood Fence",
 
+  "block.geological.birch_wood_stairs" : "Birch Wood Stairs",
+  "block.geological.birch_wood_slab" : "Birch Wood Slab",
+  "block.geological.birch_wood_wall" : "Birch Wood Wall",
+  "block.geological.birch_wood_fence" : "Birch Wood Fence",
+
+  "block.geological.spruce_wood_stairs" : "Spruce Wood Stairs",
+  "block.geological.spruce_wood_slab" : "Spruce Wood Slab",
+  "block.geological.spruce_wood_wall" : "Spruce Wood Wall",
+  "block.geological.spruce_wood_fence" : "Spruce Wood Fence",
+
+  "block.geological.jungle_wood_stairs" : "Jungle Wood Stairs",
+  "block.geological.jungle_wood_slab" : "Jungle Wood Slab",
+  "block.geological.jungle_wood_wall" : "Jungle Wood Wall",
+  "block.geological.jungle_wood_fence" : "Jungle Wood Fence",
+
+  "block.geological.acacia_wood_stairs" : "Acacia Wood Stairs",
+  "block.geological.acacia_wood_slab" : "Acacia Wood Slab",
+  "block.geological.acacia_wood_wall" : "Acacia Wood Wall",
+  "block.geological.acacia_wood_fence" : "Acacia Wood Fence",
+
+  "block.geological.dark_oak_wood_stairs" : "Dark Oak Wood Stairs",
+  "block.geological.dark_oak_wood_slab" : "Dark Oak Wood Slab",
+  "block.geological.dark_oak_wood_wall" : "Dark Oak Wood Wall",
+  "block.geological.dark_oak_wood_fence" : "Dark Oak Wood Fence",
+
+  "block.geological.mangrove_wood_stairs" : "Mangrove Wood Stairs",
+  "block.geological.mangrove_wood_slab" : "Mangrove Wood Slab",
+  "block.geological.mangrove_wood_wall" : "Mangrove Wood Wall",
+  "block.geological.mangrove_wood_fence" : "Mangrove Wood Fence",
+
+  "block.geological.cherry_wood_stairs" : "Cherry Wood Stairs",
+  "block.geological.cherry_wood_slab" : "Cherry Wood Slab",
+  "block.geological.cherry_wood_wall" : "Cherry Wood Wall",
+  "block.geological.cherry_wood_fence" : "Cherry Wood Fence",
+
+  "block.geological.pink_dogwood_log": "Pink Dogwood Log",
+  "block.geological.stripped_pink_dogwood_log": "Stripped Pink Dogwood Log",
+  "block.geological.pink_dogwood_wood": "Pink Dogwood Wood",
+  "block.geological.stripped_pink_dogwood_wood": "Stripped Pink Dogwood Wood",
+  "block.geological.pink_dogwood_planks": "Pink Dogwood Planks",
+  "block.geological.pink_dogwood_leaves": "Pink Dogwood Leaves",
+  "block.geological.pink_dogwood_sapling": "Pink Dogwood Sapling",
+  "block.geological.pink_dogwood_stairs": "Pink Dogwood Stairs",
+  "block.geological.pink_dogwood_slab": "Pink Dogwood Slab",
+  "block.geological.pink_dogwood_fence": "Pink Dogwood Fence",
+
+  "block.geological.red_dogwood_log": "Red Dogwood Log",
+  "block.geological.stripped_red_dogwood_log": "Stripped Red Dogwood Log",
+  "block.geological.red_dogwood_wood": "Red Dogwood Wood",
+  "block.geological.stripped_red_dogwood_wood": "Stripped Red Dogwood Wood",
+  "block.geological.red_dogwood_planks": "Red Dogwood Planks",
+  "block.geological.red_dogwood_leaves": "Red Dogwood Leaves",
+  "block.geological.red_dogwood_sapling": "Red Dogwood Sapling",
+  "block.geological.red_dogwood_stairs": "Red Dogwood Stairs",
+  "block.geological.red_dogwood_slab": "Red Dogwood Slab",
+  "block.geological.red_dogwood_fence": "Red Dogwood Fence",
+
+  "block.geological.white_dogwood_log": "White Dogwood Log",
+  "block.geological.stripped_white_dogwood_log": "Stripped White Dogwood Log",
+  "block.geological.white_dogwood_wood": "White Dogwood Wood",
+  "block.geological.stripped_white_dogwood_wood": "Stripped White Dogwood Wood",
+  "block.geological.white_dogwood_planks": "White Dogwood Planks",
+  "block.geological.white_dogwood_leaves": "White Dogwood Leaves",
+  "block.geological.white_dogwood_sapling": "White Dogwood Sapling",
+  "block.geological.white_dogwood_stairs": "White Dogwood Stairs",
+  "block.geological.white_dogwood_slab": "White Dogwood Slab",
+  "block.geological.white_dogwood_fence": "White Dogwood Fence",
 
 "block.geological.golden_amethyst_block" : "Block of Golden Amethyst",
-  "creativetab.geological.tab" : "Geological Tab"
-
+  "creativetab.geological.tab" : "Geological",
+  "creativetab.geological.woods": "Geological Woods"
 }

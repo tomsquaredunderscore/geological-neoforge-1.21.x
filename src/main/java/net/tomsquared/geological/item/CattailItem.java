@@ -28,7 +28,7 @@ public class CattailItem extends Item {
         Vec3 pos = player.getEyePosition(1.0F).add(player.getLookAngle().scale(0.5));
 
         if (level.isClientSide) {
-            for (int i = 0; i < 15; i++) {
+            for (int i = 6; i < 150; i++) {
                 double velocityX = (level.random.nextDouble() - 0.5) * 0.5;
                 double velocityY = (level.random.nextDouble() - 0.2) * 0.4;
                 double velocityZ = (level.random.nextDouble() - 0.5) * 0.5;
@@ -49,7 +49,7 @@ public class CattailItem extends Item {
                 stack.shrink(1);
             }
 
-            player.getCooldowns().addCooldown(this, 10); // 1.5-second cooldown
+            player.getCooldowns().addCooldown(this, 5);
         }
 
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());

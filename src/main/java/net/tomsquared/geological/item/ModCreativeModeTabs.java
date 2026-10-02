@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tomsquared.geological.Geological;
@@ -42,12 +43,86 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CATTAIL.get());
                         output.accept(ModItems.VIGOROUS_SAPLING_OAK.get());
                         output.accept(ModItems.VENUS_FLY_TRAP_SEEDS.get());
+
                         // Food & Edibles
                         output.accept(ModItems.WILD_CARROT.get());
                         output.accept(ModItems.CATTAIL_STALK.get());
                         output.accept(ModItems.PEELED_CATTAIL_STALK.get());
                         output.accept(ModItems.COOKED_CATTAIL_STALK.get());
                         output.accept(ModItems.PLUMP_SWEET_BERRIES.get());
+                    })
+                    .build()
+            );
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GEOLOGICAL_WOODS =
+            CREATIVE_MODE_TABS.register("geological_woods", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("creativetab.geological.woods"))
+                    .icon(() -> new ItemStack(ModBlocks.OAK_WOOD_STAIRS))
+                    .displayItems((parameters, output) -> {
+                        // Oak
+                        output.accept(ModBlocks.OAK_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.OAK_WOOD_SLAB.get());
+                        output.accept(ModBlocks.OAK_WOOD_WALL.get());
+                        output.accept(ModBlocks.OAK_WOOD_FENCE.get());
+
+                        // SPRUCE
+                        output.accept(ModBlocks.SPRUCE_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.SPRUCE_WOOD_SLAB.get());
+                        output.accept(ModBlocks.SPRUCE_WOOD_WALL.get());
+                        output.accept(ModBlocks.SPRUCE_WOOD_FENCE.get());
+
+                        // BIRCH
+                        output.accept(ModBlocks.BIRCH_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.BIRCH_WOOD_SLAB.get());
+                        output.accept(ModBlocks.BIRCH_WOOD_WALL.get());
+                        output.accept(ModBlocks.BIRCH_WOOD_FENCE.get());
+
+                        // JUNGLE
+                        output.accept(ModBlocks.JUNGLE_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.JUNGLE_WOOD_SLAB.get());
+                        output.accept(ModBlocks.JUNGLE_WOOD_WALL.get());
+                        output.accept(ModBlocks.JUNGLE_WOOD_FENCE.get());
+
+                        // ACACIA
+                        output.accept(ModBlocks.ACACIA_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.ACACIA_WOOD_SLAB.get());
+                        output.accept(ModBlocks.ACACIA_WOOD_WALL.get());
+                        output.accept(ModBlocks.ACACIA_WOOD_FENCE.get());
+
+                        // DARK OAK
+                        output.accept(ModBlocks.DARK_OAK_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.DARK_OAK_WOOD_SLAB.get());
+                        output.accept(ModBlocks.DARK_OAK_WOOD_WALL.get());
+                        output.accept(ModBlocks.DARK_OAK_WOOD_FENCE.get());
+
+                        // MANGROVE
+                        output.accept(ModBlocks.MANGROVE_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.MANGROVE_WOOD_SLAB.get());
+                        output.accept(ModBlocks.MANGROVE_WOOD_WALL.get());
+                        output.accept(ModBlocks.MANGROVE_WOOD_FENCE.get());
+
+                        // CHERRY
+                        output.accept(ModBlocks.CHERRY_WOOD_STAIRS.get());
+                        output.accept(ModBlocks.CHERRY_WOOD_SLAB.get());
+                        output.accept(ModBlocks.CHERRY_WOOD_WALL.get());
+                        output.accept(ModBlocks.CHERRY_WOOD_FENCE.get());
+
+
+
+                        // Dogwood Tree Blocks
+
+                        output.accept(ModBlocks.PINK_DOGWOOD_LOG.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_PINK_DOGWOOD_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_PINK_DOGWOOD_WOOD.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_LEAVES.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_SAPLING.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_PLANKS.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_STAIRS.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_SLAB.get());
+                        output.accept(ModBlocks.PINK_DOGWOOD_FENCE.get());
+
+
                     })
                     .build()
             );
