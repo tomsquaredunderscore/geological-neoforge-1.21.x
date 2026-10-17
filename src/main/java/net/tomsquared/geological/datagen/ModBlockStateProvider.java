@@ -148,10 +148,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.STRIPPED_PINK_DOGWOOD_WOOD);
 
         blockItem(ModBlocks.PINK_DOGWOOD_PLANKS);
+        blockWithItem(ModBlocks.PINK_DOGWOOD_PLANKS);
 
         leavesBlock(ModBlocks.PINK_DOGWOOD_LEAVES);
         saplingBlock(ModBlocks.PINK_DOGWOOD_SAPLING);
-
+        itemModels().getBuilder("pink_dogwood_sapling")
+                .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                .texture("layer0", "geological:block/pink_dogwood_sapling");
 
 
 

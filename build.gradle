@@ -52,10 +52,17 @@ neoForge {
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
     runs {
+
         client {
             client()
-            // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        client2 {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+
+            programArguments = ['--username', 'Dev2', '--uuid', '00000000-0000-0000-0000-000000000002']
         }
 
         server {
